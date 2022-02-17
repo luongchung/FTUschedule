@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/drawable/bovien.xml" value="0.28802083333333334" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/layout/activity_login_tlu.xml" value="0.22010869565217392" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/layout/activity_main.xml" value="0.22010869565217392" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/layout/fragment_all.xml" value="0.22010869565217392" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/layout/fragment_setting.xml" value="0.22010869565217392" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/layout/fragment_today.xml" value="0.22010869565217392" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/layout/layout_login.xml" value="0.22010869565217392" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.28802083333333334" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/mipmap-anydpi-v26/ic_launcherFTU.xml" value="0.28802083333333334" />
+        <entry key="..\:/Users/luongchung/Documents/FTU/TLUSchedule/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.28802083333333334" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/drawable/bovien.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_ads.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_change_link.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_chi_tiet_lich_hoc.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_infor_tg.xml" value="0.36231884057971014" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_login_tlu.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_them_tu_dong.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/activity_thong_bao.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/fragment_all.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/fragment_today.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/item_leave.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/item_lichhoc.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/item_today.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/layout_login.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLU2019/app/src/main/res/layout/navibar.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/drawable/bovien.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/drawable/ic_settings.xml" value="0.3728205128205128" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/drawable/ic_tutoria.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/font/chung.xml" value="0.3148148148148148" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_ads.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_change_link.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_chi_tiet_lich_hoc.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_infor_tg.xml" value="0.33" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_login_tlu.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_them_tu_dong.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/activity_thong_bao.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/fragment_all.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/fragment_setting.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/fragment_today.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/item_leave.xml" value="0.103125" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/item_lichhoc.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/item_today.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/layout_login.xml" value="0.2608695652173913" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/layout/navibar.xml" value="0.3625" />
+        <entry key="..\:/Users/luongchung/Documents/TLUSchedule/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37864583333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.3625" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

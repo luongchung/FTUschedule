@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FTU Schedule</string>
+
+    <string-array name="ThoiGianTiet">
+        <item>07:00</item>
+        <item>07:55</item>
+        <item>08:50</item>
+        <item>09:45</item>
+        <item>10:40</item>
+        <item>11:35</item>
+        <item>12:55</item>
+        <item>13:50</item>
+        <item>14:45</item>
+        <item>15:40</item>
+        <item>16:35</item>
+        <item>17:30</item>
+        <item>18:50</item>
+        <item>19:45</item>
+        <item>20:40</item>
+    </string-array>
+
+    <string name="linkdangky">http://dangky.tlu.edu.vn</string>
+    <string name="hoi">Bạn có muốn xóa lịch trước đó không ?</string>
+    <string name="luuURL">luuURL</string>
+    <string name="version">©2017 LUONG CHUNG</string>
+    <string name="login_email_hint">Nhập mã sinh viên</string>
+    <string name="login_password_hint">Mật khẩu</string>
+    <string name="oldsys"><![CDATA[....K58.K59.K60]]></string>
+    <string name="newsys"><![CDATA[K61.K62.K63....]]></string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:background="@drawable/ic_time"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#848383"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_Me"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Tên Của Mẹ Nhóm" />
+    </LinearLayout>
+
+</LinearLayout>

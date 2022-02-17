@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.lcsoft.luongchung.ftuschedule">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="false"
+        android:icon="@mipmap/ic_launcherftus"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcherftus_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name="vn.lcsoft.luongchung.services.ServiceDownloadSchedule"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <activity
+            android:name="vn.lcsoft.luongchung.ftuschedule.AdsActivity"
+            android:exported="true" />
+        <activity
+            android:name="vn.lcsoft.luongchung.ftuschedule.inforTG"
+            android:exported="true" />
+        <activity android:name="vn.lcsoft.luongchung.ftuschedule.LoginTLU" />
+        <activity android:name="vn.lcsoft.luongchung.ftuschedule.ChangeURL" />
+        <activity
+            android:name="vn.lcsoft.luongchung.ftuschedule.Notification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="THONGBAO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vn.lcsoft.luongchung.ftuschedule.ImportDataOldSystem"
+            android:exported="false" />
+        <activity android:name="vn.lcsoft.luongchung.ftuschedule.DetailsSchedule" />
+        <activity android:name="vn.lcsoft.luongchung.ftuschedule.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5001443737686857~4542932552" />
+
+        <service
+            android:name="vn.lcsoft.luongchung.firebase.FBNotifyControler"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5001443737686857~4542932552"/>
+    </application>
+
+</manifest>

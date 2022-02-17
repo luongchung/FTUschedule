@@ -1,0 +1,22 @@
+{
+  "verj": 17,
+  "Image" :"https://www.freeiconspng.com/thumbs/error-icon/error-icon-32.png",
+  "URL_AUTHEN":"http://ftugate.ftu.edu.vn/api/auth/login",
+  "URL_GETSCHEDULE":"http://ftugate.ftu.edu.vn/api/sch/w-locdstkbhockytheodoituong",
+  "URL_HUONGDAN":"https://www.youtube.com/watch?v=4NsEmHTatUA",
+  "USER_BLOCK":"",
+  "VER_BLOCK":"",
+  "click":"https://play.google.com/store/apps/details?id=vn.lcsoft.luongchung.ftuschedule",
+  "sub":"Nếu không thể tải được lịch học hãy cập nhập bản mới nhất!",
+  "ver":"10.1,10.2,10.3,10.5",
+  "timesync": 43200000,
+  "NUMCOUNTADS": 10,
+  "LOGINNOPASS": "YES",
+  "ads" :
+  {
+    "60" : "ON",
+    "61" : "ON",
+    "63" : "ON",
+    "64" : "OFF"
+  }
+}

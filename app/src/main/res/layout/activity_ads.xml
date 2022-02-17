@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".AdsActivity">
+
+    <TextView
+        android:id="@+id/txttttt"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="Giới thiệu và nhập mã của 4 người khác\nbạn sẽ được gỡ bỏ QUẢNG CÁO trên ứng dụng này"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/txtGT"
+        android:textColor="#2196F3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="(Số lượt đã giới thiệu là: 0/3)"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:background="@drawable/bovien"
+        android:id="@+id/txtMaGioThieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã giới thiệu"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary" />
+
+
+
+    <Button
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/btnGuiMa"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bovien"
+        android:text="Gửi mã giới thiệu" />
+
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="Mã giới thiệu của bạn là:"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/txtShowMaGioiThieu"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textIsSelectable="true"
+        android:layout_width="match_parent"
+        android:text=""
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/btnThanhToanGG"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bovien"
+        android:text=""/>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="50dp"
+                android:text="Cài đặt ứng dụng"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:padding="5dp"
+                android:id="@+id/sw_autodown"
+                android:gravity="center"
+                android:text="Tự động đồng bộ lịch học"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Switch>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:id="@+id/tt4"
+                android:text="Thông tin ứng dụng"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/the"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Quyền truy cập: Chỉ yêu cầu duy nhất quyền truy cập internet."
+                                android:textAllCaps="false"
+                                android:textSize="13sp"/>
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bảo mật: Dữ liệu thông tin tài khoản của bạn sẽ được chúng tôi lưu trữ trên cơ sở dữ liệu của chúng tôi...điều này phục vụ cho mục đích sửa lỗi, bảo trì và phát triển ứng dụng. Tất cả thông tin đã được mã hóa... Nếu dữ liệu bị đánh cắp cũng không thể truy ra mật khẩu của tài khoản của bạn."
+                                android:textAllCaps="false"
+
+                                android:textSize="13sp"/>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/id_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/id_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/version"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsSchedule"
+    android:weightSum="1">
+
+    <ScrollView
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:inputType="phone"
+                    android:id="@+id/txt_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Chi tiết lịch học"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_tenmon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:background="@drawable/bovien"
+                android:text="Công nghệ phần mềm"
+                android:textAllCaps="true"
+                android:textColor="#ff6b42"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/bovien"
+                android:id="@+id/id_tenloptinchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Lớp tín chỉ :56TH3"
+                android:textColor="#797878"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/bovien"
+                android:id="@+id/id_sotinchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Số tín chỉ: 3"
+                android:textColor="#797878"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_tiethoc"
+                android:background="@drawable/bovien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Tiết học: 4--->6"
+                android:textColor="#797878"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_thoigianhoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:background="@drawable/bovien"
+                android:text="Thời gian học : 13/11/1996"
+                android:textColor="#797878"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Truy cập ZOOM MEETING:"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/primaryTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="(Chỉ cần nhập một lần duy nhất)"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:background="@drawable/bovien"
+                    android:textSize="13sp"
+                    android:hint="Nhập ID ZOOM MEETING 1"
+                    android:id="@+id/txtzoom"
+                    android:textColorHint="#5E6E8F"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/btnLoginZoom"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="Kết nối"
+                    android:textSize="15sp"
+                    android:textColor="#5E6E8F"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bovien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:background="@drawable/bovien"
+                    android:textSize="13sp"
+                    android:hint="Nhập ID ZOOM MEETING 2"
+                    android:id="@+id/txtzoom1"
+                    android:textColorHint="#5E6E8F"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/btnLoginZoom1"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="Kết nối"
+                    android:textSize="15sp"
+                    android:textColor="#5E6E8F"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bovien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:background="@drawable/bovien"
+                    android:textSize="13sp"
+                    android:hint="Nhập ID ZOOM MEETING 3"
+                    android:id="@+id/txtzoom2"
+                    android:textColorHint="#5E6E8F"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/btnLoginZoom2"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="Kết nối"
+                    android:textSize="15sp"
+                    android:textColor="#5E6E8F"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bovien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:background="@drawable/bovien"
+                    android:textSize="13sp"
+                    android:hint="Nhập ID ZOOM MEETING 4"
+                    android:id="@+id/txtzoom3"
+                    android:textColorHint="#5E6E8F"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/btnLoginZoom3"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="Kết nối"
+                    android:textSize="15sp"
+                    android:textColor="#5E6E8F"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bovien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+                </Button>
+            </LinearLayout>
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Chú ý: Bạn phải tải app zoom trước đó thì mới sử dụng được tính năng này."
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:textColor="#EC1818"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

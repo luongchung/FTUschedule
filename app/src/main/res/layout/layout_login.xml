@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:id="@+id/idformLogin"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:textSize="13sp"
+            android:text="Đăng nhập bằng tài khoản đăng ký học"
+            android:layout_marginTop="@dimen/loginViewsMargin" />
+        <TextView
+            style="@style/headerTextPrimary"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic"
+            android:text="http://ftugate.ftu.edu.vn/"
+            android:layout_marginTop="@dimen/loginViewsMargin" />
+
+
+        <EditText
+            android:id="@+id/txtMsv"
+            style="@style/modifiedEditText"
+            android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="15sp"
+            android:hint="@string/login_email_hint" />
+
+        <LinearLayout
+            android:id="@+id/layoutedit"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPass"
+                style="@style/modifiedEditText"
+                android:hint="@string/login_password_hint"
+                android:textColor="@color/primaryTextColor"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@drawable/bovien"
+            android:id="@+id/btnLogin"
+            style="@style/loginButton"
+            android:text="Tải lịch về máy"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
