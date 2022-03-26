@@ -118,9 +118,6 @@ public class LoginTLU extends Activity {
         sharedPreferences = getSharedPreferences(DB_APP, MODE_PRIVATE);
         txtMsv.setText(sharedPreferences.getString("userschedule", ""));
         txtPass.setText(sharedPreferences.getString("passschedule", ""));
-
-        txtMsv.setText("AAA");
-        txtPass.setText("AAA");
         loginNoPass = false;
         arrSeparate = new ArrayList<>();
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -274,7 +271,7 @@ public class LoginTLU extends Activity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        ShowLog(this, response.toString());
+                        ShowLog(this, response);
                         callBack.onDone(200, response);
                     }
                 },
@@ -293,11 +290,10 @@ public class LoginTLU extends Activity {
         ) {
             @Override
             protected Map<String, String> getParams() {
-                //username=2114610038&password=luongthithutrang333&grant_type=password
                 Map<String, String> params = new HashMap<>();
                 params.put("grant_type", "password");
-                params.put("username", "2114610038");
-                params.put("password", "luongthithutrang333");
+                params.put("username", username);
+                params.put("password", password);
                 return params;
             }
         };
@@ -412,24 +408,23 @@ public class LoginTLU extends Activity {
 
         for (Object object : dslich){
             JsonObject jsonMon = (JsonObject)object;
-            String tenMonHoc = jsonMon.get("ten_mon").toString();
-            String tenLopTinChi = jsonMon.get("nhom_to").toString();
-            String __roomName = jsonMon.get("phong").toString();
+            String tenMonHoc = jsonMon.get("ten_mon").getAsString();
+            String tenLopTinChi = jsonMon.get("nhom_to").getAsString();
+            String __roomName = jsonMon.get("phong").getAsString();
+            if(__roomName.equals("")) __roomName = "Chưa xác định";
             String __startHour = jsonMon.get("tbd").toString();
-            String __endHour = String.valueOf(Integer.parseInt(jsonMon.get("tbd").toString()) + Integer.parseInt(jsonMon.get("so_tiet").toString()) - 1);
+            String __endHour = String.valueOf(Integer.parseInt(jsonMon.get("tbd").getAsString()) + Integer.parseInt(jsonMon.get("so_tiet").getAsString()) - 1);
             String weekIndex = jsonMon.get("thu").toString();
             String tengv = "";
-            if (jsonMon.has("gv")) tengv = jsonMon.get("gv").toString();
-            String tkb = jsonMon.get("tkb").toString();;
-            Pattern mau = Pattern.compile("\"(.*)\\sđến\\s(.*)\"");
+            if (jsonMon.has("gv")) tengv = jsonMon.get("gv").getAsString();
+            String tkb = jsonMon.get("tkb").getAsString();
+            Pattern mau = Pattern.compile("(.*)\\sđến\\s(.*)");
             Matcher m = mau.matcher(tkb.trim());
             if (m.find()) {
-//                ShowLog(this,"-" +m.group(1)+"-");
-//                ShowLog(this,"-" +m.group(2)+"-");
-                SimpleDateFormat sff = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                SimpleDateFormat sff = new SimpleDateFormat("dd/MM/yy");
                 try {
-                    Date dateBD = sff.parse(m.group(1)+ " 00:00:00");
-                    Date dateKT = sff.parse(m.group(2)+ " 24:59:59");
+                    Date dateBD = sff.parse(m.group(1));
+                    Date dateKT = sff.parse(m.group(2));
                     LichPhanMang a = new LichPhanMang(1,tenMonHoc, tenLopTinChi, __roomName, tengv, dateBD, dateKT, weekIndex, __startHour, __endHour, "trống");
                     ShowLog(this,a.toString());
                     arrSeparate.add(a);
@@ -461,7 +456,6 @@ public class LoginTLU extends Activity {
     private void addSeprate() {
         SimpleDateFormat sfs = new SimpleDateFormat("dd/MM/yyyy");
         sqLiteDatabase = openOrCreateDatabase(DB_NAME, MODE_PRIVATE, null);
-        Calendar cal = Calendar.getInstance();
         for (int i = 0; i < arrSeparate.size(); i++) {
             Calendar c = Calendar.getInstance();
             Calendar kt = Calendar.getInstance();
@@ -469,9 +463,8 @@ public class LoginTLU extends Activity {
             kt.add(Calendar.DATE, 1);
             c.setTime(arrSeparate.get(i).getNgayBatDau());
             while (c.getTime().before(kt.getTime())) {
-                int thu = cal.get(Calendar.DAY_OF_WEEK);
+                int thu = c.get(Calendar.DAY_OF_WEEK);
                 if (thu == Integer.parseInt(arrSeparate.get(i).getThuHoc().trim())) {
-                    ShowLog(this, sfs.format(c.getTime()) + "====" + arrSeparate.get(i).getTenMonHoc());
                     row_sql = new ContentValues();
                     row_sql.put("TenMonHoc", arrSeparate.get(i).getTenMonHoc() + "");
                     row_sql.put("TenLopTinChi", arrSeparate.get(i).getTenLopTinChi() + "");

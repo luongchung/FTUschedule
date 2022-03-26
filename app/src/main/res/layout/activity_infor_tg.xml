@@ -12,22 +12,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <TextView
-                android:layout_marginTop="50dp"
-                android:text="Cài đặt ứng dụng"
-                android:gravity="center"
-                android:textSize="18dp"
-                android:paddingBottom="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <Switch
-                android:padding="5dp"
-                android:id="@+id/sw_autodown"
-                android:gravity="center"
-                android:text="Tự động đồng bộ lịch học"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </Switch>
+
             <TextView
                 android:layout_marginTop="50dp"
                 android:id="@+id/tt4"
@@ -62,7 +47,7 @@
                                 android:layout_gravity="left"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Quyền truy cập: Chỉ yêu cầu duy nhất quyền truy cập internet."
+                                android:text="Quyền truy cập: Internet"
                                 android:textAllCaps="false"
                                 android:textSize="13sp"/>
                             <TextView

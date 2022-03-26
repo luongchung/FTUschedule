@@ -383,24 +383,6 @@ public class FragmentToday extends Fragment implements Comparator<LichChuan> {
                     ).show();
                 }
 
-                if (mapConfig.containsKey("sync") && !mapConfig.get("sync").toString().equals("")) {
-                    if (mapConfig.get("sync").toString().equals("ON")) {
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putBoolean(isSync, true);
-                        editor.apply();
-                    } else {
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putBoolean(isSync, false);
-                        editor.apply();
-                    }
-                    jsonObject.remove("sync");
-                    SharedPreferences.Editor editor1 = sharedPreferences.edit();
-                    editor1.putString(pathJsonConfig, jsonObject.toString());
-                    editor1.commit();
-                }
-                if (mapConfig.containsKey("timesync") && !mapConfig.get("timesync").toString().equals("")) {
-                    StaticCode.timeSchedule = Integer.parseInt(mapConfig.get("timesync").toString());
-                }
                 //enable qc by list tatca
 //                if (mapConfig.containsKey("ads")) {
 //                    Map<String, Object> mapAds = (Map<String, Object>) mapConfig.get("ads");

@@ -22,7 +22,6 @@ public class StaticCode {
     //check run One time
     public static boolean ADSCONFIG = true;
     public static boolean ALLCONFIG = true;
-    public static final int JOBID = 13111993;
     public static int verJson;
     public static final String DB_PATH = "/databases/";
     public static final String DB_NAME = "dbthoikhoabieu.sqlite";
@@ -36,8 +35,7 @@ public class StaticCode {
     public static final String pathJsonConfig = "pathJsonConfig";
     public static boolean readedADS = false;
     public static SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    public static String URL_CF = "https://luongchung.github.io/doc/config.json";
-    public static int timeSchedule = 12 * 60 * 60 * 1000;
+    public static String URL_CF = "https://luongchung.github.io/doc/configftu.json";
     //list updateConfig
     public static String URL_WRU = "http://dangky.tlu.edu.vn";
     public static String URLQQB = "https://luongchung.github.io/qbee/a10.gif";

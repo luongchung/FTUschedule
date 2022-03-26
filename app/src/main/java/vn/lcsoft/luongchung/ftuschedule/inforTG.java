@@ -22,7 +22,6 @@ import vn.lcsoft.luongchung.StaticCode;
 
 public class inforTG extends AppCompatActivity {
     TextView txt, txtConfig;
-    Switch aSwitch;
     SharedPreferences sharedPreferences;
 
 
@@ -41,25 +40,8 @@ public class inforTG extends AppCompatActivity {
         }
         txt.setText(versionName);
         txtConfig.setText(versionConfig);
-        aSwitch = findViewById(R.id.sw_autodown);
+
         sharedPreferences = getSharedPreferences(DB_APP, MODE_PRIVATE);
-        aSwitch.setChecked(sharedPreferences.getBoolean(isSync, true));
-        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isOn) {
-                if (isOn) {
-                    SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putBoolean(isSync, true);
-                    editor.apply();
-                    Toast.makeText(inforTG.this, "Bạn đã BẬT đồng bộ", Toast.LENGTH_SHORT).show();
-                } else {
-                    SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putBoolean(isSync, false);
-                    editor.apply();
-                    Toast.makeText(inforTG.this, "Bạn đã TẮT đồng bộ", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
         ViewPump.init(ViewPump.builder()
                 .addInterceptor(new CalligraphyInterceptor(
                         new CalligraphyConfig.Builder()

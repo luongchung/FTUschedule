@@ -92,10 +92,10 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="f80707" />
-                                                <entry key="fontFamily" value="Courier New" />
+                                                <entry key="color" value="ffffff" />
+                                                <entry key="fontFamily" value="Monospaced" />
                                                 <entry key="scalingPercent" value="120" />
-                                                <entry key="text" value="FTUer" />
+                                                <entry key="text" value="  FTU" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -107,10 +107,10 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="f80707" />
-                                                <entry key="fontFamily" value="Courier New" />
+                                                <entry key="color" value="ffffff" />
+                                                <entry key="fontFamily" value="Monospaced" />
                                                 <entry key="scalingPercent" value="120" />
-                                                <entry key="text" value="FTUer" />
+                                                <entry key="text" value="  FTU" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -122,6 +122,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="be1f25" />
                                       <entry key="foregroundAssetType" value="TEXT" />
                                     </map>
                                   </option>

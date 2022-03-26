@@ -18,12 +18,6 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.billingclient.api.BillingClient;
-import com.android.billingclient.api.BillingClientStateListener;
-import com.android.billingclient.api.BillingResult;
-import com.android.billingclient.api.Purchase;
-import com.android.billingclient.api.PurchasesResponseListener;
-import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.gigamole.navigationtabstrip.NavigationTabStrip;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
@@ -43,7 +37,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.List;
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
@@ -51,7 +44,6 @@ import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import vn.lcsoft.luongchung.StaticCode;
 import vn.lcsoft.luongchung.adapters.ViewPagerAdapter;
-import vn.lcsoft.luongchung.services.ServiceDownloadSchedule;
 
 import static vn.lcsoft.luongchung.StaticCode.DB_APP;
 import static vn.lcsoft.luongchung.StaticCode.ShowLog;
@@ -251,55 +243,11 @@ public class HomeActivity extends AppCompatActivity {
         aManager.setStreamMute(AudioManager.STREAM_MUSIC, true);
     }
 
-    @SuppressLint({"NewApi", "LocalSuppress"})
-    void starJobSchedule() {
-        ComponentName componentName = new ComponentName(this, ServiceDownloadSchedule.class);
-        @SuppressLint("MissingPermission") JobInfo jobInfo = new JobInfo.Builder(StaticCode.JOBID, componentName)
-                .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
-                .setRequiresDeviceIdle(true)
-                .setPersisted(true)
-                .setPeriodic(StaticCode.timeSchedule)
-                .build();
-        JobScheduler jobScheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
-        jobScheduler.schedule(jobInfo);
-    }
 
-    @SuppressLint({"NewApi", "LocalSuppress"})
-    void cacelJobSchedule() {
-        ShowLog(getApplicationContext(), "Stop starJobSchedule");
-        JobScheduler jobScheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
-        for (JobInfo jobInfo : jobScheduler.getAllPendingJobs()) {
-            jobScheduler.cancel(jobInfo.getId());
-        }
-    }
 
     @Override
     protected void onStart() {
         super.onStart();
-        if (sharedPreferences.getBoolean(isSync, true)) {
-            if (!isJobServiceOn(getApplicationContext())) {
-                ShowLog(getApplicationContext(), "Run starJobSchedule");
-                starJobSchedule();
-            }
-        } else {
-            cacelJobSchedule();
-        }
     }
 
-    @SuppressLint({"NewApi", "LocalSuppress"})
-    public boolean isJobServiceOn(Context context) {
-        JobScheduler scheduler = (JobScheduler) context.getSystemService(Context.JOB_SCHEDULER_SERVICE);
-
-        boolean hasBeenScheduled = false;
-
-        for (JobInfo jobInfo : scheduler.getAllPendingJobs()) {
-
-            if (jobInfo.getId() == StaticCode.JOBID) {
-                hasBeenScheduled = true;
-                break;
-            }
-        }
-
-        return hasBeenScheduled;
-    }
 }
